@@ -24,7 +24,6 @@ import { UrlsModule } from "./urls/urls.module";
           database: configService.get<string>("POSTGRES_DB"),
           entities: [__dirname + "/**/*.entity.js"],
           synchronize: true,
-          // autoLoadEntities: true,
           logging: true,
         };
       },

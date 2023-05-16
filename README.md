@@ -45,6 +45,17 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+### For starting application you need to create .env file in root folder and provide next vars.
+``` 
+APP_PORT=
+POSTGRES_HOST
+POSTGRES_PORT
+POSTGRES_PASSWORD
+POSTGRES_USER
+DB_TYPE
+POSTGRES_DB
+JWT_SECRET
+```
 ## Test
 
 ```bash
