@@ -19,9 +19,9 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "typeorm": "npm run build && npx typeorm -d dist/db/data-source.js",
-    "migration:generate" : "npm run typeorm migration:generate -- dist/db/data-source.js ",
-    "migration:run" : "npm run typeorm -- migration:run",
-    "migration:revert" : "npm run typeorm -- migration:revert"
+    "migration:generate": "npm run typeorm migration:generate -- dist/db/data-source.js ",
+    "migration:run": "npm run typeorm -- migration:run",
+    "migration:revert": "npm run typeorm -- migration:revert"
   },
   "dependencies": {
     "@nestjs/axios": "^2.0.0",
@@ -58,8 +58,8 @@
     "@types/passport-jwt": "^3.0.8",
     "@types/supertest": "^2.0.11",
     "@types/uuid": "^9.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

@@ -9,7 +9,7 @@ import { UrlsModule } from "./urls/urls.module";
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: `.env`,
+      envFilePath: ".env",
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],

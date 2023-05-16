@@ -29,7 +29,7 @@ export class UsersService {
       return newUser;
     } catch (e) {
       if (e.code === "23505") {
-        throw new ConflictException(`User with this email already exists`);
+        throw new ConflictException("User with this email already exists");
       } else {
         throw new InternalServerErrorException();
       }

@@ -87,7 +87,7 @@ export class UrlsService {
       );
     }
     if (urlToRemove.user !== currentUser.id && currentUser.admin === false) {
-      throw new ForbiddenException(`You aren't authorized to delete this link`);
+      throw new ForbiddenException("You aren't authorized to delete this link");
     }
     await this.urlsRepository.remove(urlToRemove);
     return { message: "Url removed", statusCode: 200 };

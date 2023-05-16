@@ -16,14 +16,16 @@ export class AuthCredentialsDto {
 
   @ApiProperty({
     name: "password",
-    description: `Passwords will contain at least 1 upper case letter, 1 lower case letter, 1 number or special character`,
+    description:
+      "Passwords will contain at least 1 upper case letter, 1 lower case letter, 1 number or special character",
   })
   @IsString()
   @IsNotEmpty()
   @MinLength(8)
   @MaxLength(32)
   @Matches(/(?:(?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/, {
-    message: `Passwords will contain at least 1 upper case letter, 1 lower case letter, 1 number or special character`,
+    message:
+      "Passwords will contain at least 1 upper case letter, 1 lower case letter, 1 number or special character",
   })
   readonly password: string;
 }
